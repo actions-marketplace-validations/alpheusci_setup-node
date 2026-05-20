@@ -32,8 +32,8 @@ jobs:
                       code: windows-latest
 
                 node:
-                    - 22
-                    - 24
+                    - "22.22.3"
+                    - "24.15.0"
                     - latest
 
                 pm:
