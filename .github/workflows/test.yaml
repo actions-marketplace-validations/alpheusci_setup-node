@@ -32,15 +32,11 @@ jobs:
                       code: windows-latest
 
                 node:
-                    - "20.17.0"
-                    - "22.9.0"
-                    - "24.0.0"
+                    - 22
+                    - 24
                     - latest
 
                 pm:
-                    - name: npm
-                      code: npm
-                      version: "10.5.0"
                     - name: npm
                       code: npm
                       version: "11.0.0"
@@ -50,20 +46,14 @@ jobs:
 
                     - name: Yarn
                       code: yarn
-                      version: "4.0.0"
-                    - name: Yarn
-                      code: yarn
-                      version: "4.10.0"
+                      version: "4.15.0"
                     - name: Yarn
                       code: yarn
                       version: latest
 
                     - name: pnpm
                       code: pnpm
-                      version: "9.15.0"
-                    - name: pnpm
-                      code: pnpm
-                      version: "10.0.0"
+                      version: "11.0.0"
                     - name: pnpm
                       code: pnpm
                       version: latest
@@ -76,7 +66,7 @@ jobs:
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
 
             - name: Setup Node
               uses: ./
